@@ -1,0 +1,3 @@
+defaults:
+  - split: normalizing_split
+  - train: random_forest
