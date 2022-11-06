@@ -13,3 +13,5 @@
 
 Пример запуска:
     ./predict ../data/train.csv ../models/log_regression.joblib ../data/predictions.csv
+
+Тесты надо запускать из tests
