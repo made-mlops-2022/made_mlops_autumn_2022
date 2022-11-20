@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException, status
 from schemas import Patient
 import numpy as np
 from model import Model
@@ -15,7 +15,13 @@ def home():
 
 @app.get('/health', status_code=200)
 def model_ready():
-    model.is_ready()
+    try:
+        model.is_ready()
+    except ValueError:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f'model dont ready',
+        )
 
 
 @app.post('/predict')

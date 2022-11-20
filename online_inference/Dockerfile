@@ -1,13 +1,12 @@
-FROM python:3.9
+FROM tiangolo/uvicorn-gunicorn:python3.8
 
-WORKDIR /code
+WORKDIR /app
 
-COPY . /code
+COPY . /app
+RUN python -m pip install --upgrade pip
+RUN pip install --no-cache-dir -r requirements.txt
 
-# COPY ./requirements.txt /code/requirements.txt
-
-RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
-
-CMD ["uvicorn", "server:app"]
+# CMD ["uvicorn", "server:app"]
+# CMD ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "8000"]
 
 

@@ -1,7 +1,6 @@
 from joblib import load
 import numpy as np
 from sklearn import preprocessing
-from fastapi import HTTPException, status
 
 
 class Model:
@@ -26,8 +25,5 @@ class Model:
 
     def is_ready(self):
         if self.model == None:
-            raise HTTPException(
-                status_code=status.HTTP_404_NOT_FOUND,
-                detail=f'model dont ready',
-            )
+            raise ValueError('model not inicialized')
         return True
