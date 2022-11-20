@@ -1,0 +1,362 @@
+[
+    {
+        "age": 143,
+        "sex": 0,
+        "cp": 3,
+        "trestbps": 352,
+        "chol": 573,
+        "fbs": 0,
+        "restecg": 0,
+        "thalach": 201,
+        "exang": 0,
+        "oldpeak": 0.28142464030788,
+        "slope": 2,
+        "ca": 2,
+        "thal": 0,
+        "condition": [
+            1
+        ]
+    },
+    {
+        "age": 13,
+        "sex": 1,
+        "cp": 2,
+        "trestbps": 95,
+        "chol": 39,
+        "fbs": 1,
+        "restecg": 0,
+        "thalach": 47,
+        "exang": 0,
+        "oldpeak": 5.264397,
+        "slope": 1,
+        "ca": 1,
+        "thal": 1,
+        "condition": [
+            1
+        ]
+    },
+    {
+        "age": 91,
+        "sex": 1,
+        "cp": 0,
+        "trestbps": 59,
+        "chol": 375,
+        "fbs": 0,
+        "restecg": 2,
+        "thalach": 138,
+        "exang": 0,
+        "oldpeak": 4.292,
+        "slope": 0,
+        "ca": 0,
+        "thal": 1,
+        "condition": [
+            0
+        ]
+    },
+    {
+        "age": 68,
+        "sex": 0,
+        "cp": 0,
+        "trestbps": 354,
+        "chol": 479,
+        "fbs": 1,
+        "restecg": 1,
+        "thalach": 79,
+        "exang": 1,
+        "oldpeak": 4.9281238437282,
+        "slope": 0,
+        "ca": 3,
+        "thal": 1,
+        "condition": [
+            1
+        ]
+    },
+    {
+        "age": 52,
+        "sex": 1,
+        "cp": 0,
+        "trestbps": 316,
+        "chol": 278,
+        "fbs": 1,
+        "restecg": 2,
+        "thalach": 66,
+        "exang": 0,
+        "oldpeak": 5.1597,
+        "slope": 1,
+        "ca": 0,
+        "thal": 0,
+        "condition": [
+            1
+        ]
+    },
+    {
+        "age": 23,
+        "sex": 0,
+        "cp": 3,
+        "trestbps": 58,
+        "chol": 578,
+        "fbs": 0,
+        "restecg": 0,
+        "thalach": 220,
+        "exang": 1,
+        "oldpeak": 4.3229809,
+        "slope": 2,
+        "ca": 2,
+        "thal": 1,
+        "condition": [
+            0
+        ]
+    },
+    {
+        "age": 6,
+        "sex": 1,
+        "cp": 0,
+        "trestbps": 14,
+        "chol": 231,
+        "fbs": 0,
+        "restecg": 2,
+        "thalach": 218,
+        "exang": 0,
+        "oldpeak": 4.32217202105,
+        "slope": 0,
+        "ca": 1,
+        "thal": 1,
+        "condition": [
+            0
+        ]
+    },
+    {
+        "age": 24,
+        "sex": 1,
+        "cp": 1,
+        "trestbps": 91,
+        "chol": 42,
+        "fbs": 1,
+        "restecg": 2,
+        "thalach": 177,
+        "exang": 0,
+        "oldpeak": 1.343946655,
+        "slope": 2,
+        "ca": 1,
+        "thal": 0,
+        "condition": [
+            1
+        ]
+    },
+    {
+        "age": 138,
+        "sex": 0,
+        "cp": 1,
+        "trestbps": 186,
+        "chol": 550,
+        "fbs": 0,
+        "restecg": 2,
+        "thalach": 157,
+        "exang": 1,
+        "oldpeak": 6.2543401276,
+        "slope": 1,
+        "ca": 1,
+        "thal": 2,
+        "condition": [
+            1
+        ]
+    },
+    {
+        "age": 105,
+        "sex": 1,
+        "cp": 1,
+        "trestbps": 352,
+        "chol": 382,
+        "fbs": 1,
+        "restecg": 0,
+        "thalach": 250,
+        "exang": 0,
+        "oldpeak": 1.616021,
+        "slope": 2,
+        "ca": 0,
+        "thal": 1,
+        "condition": [
+            1
+        ]
+    },
+    {
+        "age": 73,
+        "sex": 1,
+        "cp": 1,
+        "trestbps": 183,
+        "chol": 559,
+        "fbs": 0,
+        "restecg": 0,
+        "thalach": 27,
+        "exang": 1,
+        "oldpeak": 3.788296,
+        "slope": 1,
+        "ca": 2,
+        "thal": 0,
+        "condition": [
+            1
+        ]
+    },
+    {
+        "age": 27,
+        "sex": 0,
+        "cp": 1,
+        "trestbps": 164,
+        "chol": 429,
+        "fbs": 0,
+        "restecg": 1,
+        "thalach": 234,
+        "exang": 0,
+        "oldpeak": 4.966979145828,
+        "slope": 1,
+        "ca": 3,
+        "thal": 1,
+        "condition": [
+            1
+        ]
+    },
+    {
+        "age": 5,
+        "sex": 0,
+        "cp": 2,
+        "trestbps": 24,
+        "chol": 95,
+        "fbs": 1,
+        "restecg": 2,
+        "thalach": 145,
+        "exang": 0,
+        "oldpeak": 5.4683711454,
+        "slope": 1,
+        "ca": 1,
+        "thal": 1,
+        "condition": [
+            1
+        ]
+    },
+    {
+        "age": 36,
+        "sex": 0,
+        "cp": 1,
+        "trestbps": 383,
+        "chol": 166,
+        "fbs": 0,
+        "restecg": 0,
+        "thalach": 221,
+        "exang": 0,
+        "oldpeak": 1.144,
+        "slope": 1,
+        "ca": 1,
+        "thal": 1,
+        "condition": [
+            1
+        ]
+    },
+    {
+        "age": 22,
+        "sex": 1,
+        "cp": 3,
+        "trestbps": 385,
+        "chol": 67,
+        "fbs": 1,
+        "restecg": 2,
+        "thalach": 259,
+        "exang": 0,
+        "oldpeak": 2.404,
+        "slope": 2,
+        "ca": 2,
+        "thal": 0,
+        "condition": [
+            1
+        ]
+    },
+    {
+        "age": 77,
+        "sex": 0,
+        "cp": 2,
+        "trestbps": 34,
+        "chol": 268,
+        "fbs": 1,
+        "restecg": 1,
+        "thalach": 68,
+        "exang": 1,
+        "oldpeak": 4.200536825,
+        "slope": 2,
+        "ca": 1,
+        "thal": 0,
+        "condition": [
+            0
+        ]
+    },
+    {
+        "age": 148,
+        "sex": 0,
+        "cp": 1,
+        "trestbps": 113,
+        "chol": 552,
+        "fbs": 1,
+        "restecg": 1,
+        "thalach": 178,
+        "exang": 1,
+        "oldpeak": 1.4142456286018,
+        "slope": 1,
+        "ca": 0,
+        "thal": 1,
+        "condition": [
+            0
+        ]
+    },
+    {
+        "age": 126,
+        "sex": 1,
+        "cp": 3,
+        "trestbps": 58,
+        "chol": 366,
+        "fbs": 1,
+        "restecg": 1,
+        "thalach": 207,
+        "exang": 0,
+        "oldpeak": 4.376541,
+        "slope": 1,
+        "ca": 2,
+        "thal": 0,
+        "condition": [
+            0
+        ]
+    },
+    {
+        "age": 142,
+        "sex": 1,
+        "cp": 3,
+        "trestbps": 125,
+        "chol": 425,
+        "fbs": 0,
+        "restecg": 2,
+        "thalach": 166,
+        "exang": 0,
+        "oldpeak": 4.74361944081399,
+        "slope": 2,
+        "ca": 0,
+        "thal": 1,
+        "condition": [
+            0
+        ]
+    },
+    {
+        "age": 1,
+        "sex": 0,
+        "cp": 3,
+        "trestbps": 70,
+        "chol": 337,
+        "fbs": 0,
+        "restecg": 0,
+        "thalach": 79,
+        "exang": 0,
+        "oldpeak": 2.9164300665,
+        "slope": 0,
+        "ca": 2,
+        "thal": 1,
+        "condition": [
+            1
+        ]
+    }
+]
