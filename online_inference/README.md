@@ -16,4 +16,3 @@ command to pull:
 ```
 docker pull katia2145/mlops_fastapi
 ```
-
