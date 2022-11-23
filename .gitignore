@@ -3,3 +3,4 @@ ml_project/conf/__pycache__
 ml_project/log/
 ml_project/tests/__pycache__
 ml_project/tests/outputs
+online_inference/__pycache__
