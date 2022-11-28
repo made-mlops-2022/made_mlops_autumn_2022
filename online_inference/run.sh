@@ -1,0 +1,1 @@
+docker run -d -p 8081:80 -e MODULE_NAME="server" mlops_fastapi
