@@ -1,6 +1,0 @@
-config_name: simple_split
-path_to_csv: ../data/heart_cleveland_upload.csv 
-dir_to_write: ../data/
-test_size: 0.2
-random_state: 42
-normalizing: False

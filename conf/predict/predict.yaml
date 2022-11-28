@@ -1,4 +1,0 @@
-config_name: predict
-path_to_csv: ../data/test.csv
-path_to_model: ../models/log_regression.joblib
-path_to_write_csv: ../data/predictions.csv
