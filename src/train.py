@@ -16,7 +16,7 @@ class Config:
     model: str
 
 
-def train(config):    
+def train(config) -> None:    
     with open(config.path_to_csv) as file_csv:
         X = pd.read_csv(file_csv)
     
@@ -37,7 +37,7 @@ def train(config):
 
 
 @hydra.main(version_base=None, config_path="../conf", config_name="config")
-def run_train(cfg: DictConfig):
+def run_train(cfg: DictConfig) -> None:
     config_dict = cfg.train
     config = Config(**config_dict)
     train(config)

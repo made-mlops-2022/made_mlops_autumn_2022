@@ -36,3 +36,12 @@
 2022-11-02 17:24:15,314	INFO	loading model...
 2022-11-02 17:24:15,570	INFO	predict...
 2022-11-02 17:24:15,580	INFO	predictions was writen to ../data/predictions.csv...
+2022-11-28 11:14:17,444	ERROR	start predict
+2022-11-28 11:14:17,452	DEBUG	Setting JobRuntime:name=UNKNOWN_NAME
+2022-11-28 11:14:17,453	DEBUG	Setting JobRuntime:name=predict
+2022-11-28 11:15:04,485	DEBUG	Setting JobRuntime:name=UNKNOWN_NAME
+2022-11-28 11:15:04,485	DEBUG	Setting JobRuntime:name=predict
+2022-11-28 11:15:36,147	DEBUG	Setting JobRuntime:name=UNKNOWN_NAME
+2022-11-28 11:15:36,147	DEBUG	Setting JobRuntime:name=predict
+2022-11-28 11:24:06,563	DEBUG	Setting JobRuntime:name=UNKNOWN_NAME
+2022-11-28 11:24:06,563	DEBUG	Setting JobRuntime:name=predict

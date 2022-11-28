@@ -3,40 +3,62 @@ from joblib import load
 import argparse
 import os.path
 import logging
+from dataclasses import dataclass
+import hydra
+from omegaconf import DictConfig
 
 
-def predict(path_to_csv='../data/test.csv', path_to_model="../models/log_regression.joblib", path_to_write_csv="../data/predictions.csv"):
-    with open(path_to_csv) as file_csv:
+@dataclass
+class Config:
+    config_name: str
+    path_to_csv: str
+    path_to_model: str
+    path_to_write_csv: str
+
+
+def predict(config) -> None:
+    with open(config.path_to_csv) as file_csv:
         X_test = pd.read_csv(file_csv)
 
     logging.info('loading model...')
-    model = load(path_to_model) 
+    model = load(config.path_to_model) 
 
     logging.info('predict...')
     y_pred = model.predict(X_test)
 
     df = pd.DataFrame(y_pred, columns=['condition'])
-    df.to_csv(path_to_write_csv, index=False)
-    logging.info(f'predictions was writen to {path_to_write_csv}...')
+    df.to_csv(config.path_to_write_csv, index=False)
+    logging.info(f'predictions was writen to {config.path_to_write_csv}...')
 
 
-def check_args(args):
-    if not os.path.exists(args.path_to_csv):
-        text_error = f'file {args.path_to_csv} dont exist'
+
+def check_config(config) -> None:
+    if not os.path.exists(config.path_to_csv):
+        text_error = f'file {config.path_to_csv} dont exist'
         logging.error(text_error)
         raise FileNotFoundError(text_error)
 
-    if not os.path.exists(args.path_to_model):
-        text_error = f'file {args.path_to_model} dont exist'
+    if not os.path.exists(config.path_to_model):
+        text_error = f'file {config.path_to_model} dont exist'
         logging.error(text_error)
         raise FileNotFoundError(text_error)
 
-    path_to_write_csv = os.path.dirname(args.args.path_to_csv)
+    path_to_write_csv = os.path.dirname(config.path_to_csv)
 
     if not os.path.exists(path_to_write_csv):
         text_error = f'directory {path_to_write_csv} dont exist'
         logging.error(text_error)
         raise FileNotFoundError(text_error)
+
+
+
+@hydra.main(version_base=None, config_path="../conf", config_name="config")
+def run_predict(cfg: DictConfig) -> None:
+    config_dict = cfg.predict
+    config = Config(**config_dict)
+
+    check_config(config)
+    predict(config)
 
 
 if __name__ == '__main__':
@@ -46,12 +68,4 @@ if __name__ == '__main__':
         format="%(asctime)s\t%(levelname)s\t%(message)s",
     )
 
-    logging.error('start predict')
-
-    parser = argparse.ArgumentParser()
-    parser.add_argument("path_to_csv", type=str, help="path to test csv")
-    parser.add_argument("path_to_model", type=str, help="path to model")
-    parser.add_argument("path_to_write_csv", type=str, help="path to write predictions")
-    args = parser.parse_args()
-
-    predict(args.path_to_csv, args.path_to_model, args.path_to_write_csv)
+    run_predict()

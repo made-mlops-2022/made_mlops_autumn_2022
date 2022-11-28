@@ -18,13 +18,13 @@ class Config:
     normalizing: bool
 
 
-def preprocessing_data(X, config):
+def preprocessing_data(X, config) -> np.ndarray:
     if config.normalizing:
         X = preprocessing.normalize(X)
     return X
 
 
-def split_csv(config):    
+def split_csv(config) -> None:    
     with open(config.path_to_csv) as file_csv:
         df = pd.read_csv(file_csv)
 
@@ -51,7 +51,7 @@ def split_csv(config):
 
 
 @hydra.main(version_base=None, config_path="../conf/", config_name="config")
-def run_split_csv(cfg: DictConfig):
+def run_split_csv(cfg: DictConfig) -> None:
     config_dict = cfg.split
     config = Config(**config_dict)
     split_csv(config)

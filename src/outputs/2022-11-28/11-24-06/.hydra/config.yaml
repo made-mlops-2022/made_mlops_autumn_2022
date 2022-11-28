@@ -1,0 +1,17 @@
+split:
+  config_name: simple_split
+  path_to_csv: ../data/heart_cleveland_upload.csv
+  dir_to_write: ../data/
+  test_size: 0.2
+  random_state: 37
+  normalizing: true
+train:
+  config_name: random_forest
+  path_to_csv: ../data/train.csv
+  path_to_save_model: ../models/log_regression.joblib
+  model: RandomForest
+predict:
+  config_name: predict
+  path_to_csv: ../data/test.csv
+  path_to_model: ../models/log_regression.joblib
+  path_to_write_csv: ../data/predictions.csv
