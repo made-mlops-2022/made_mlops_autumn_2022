@@ -1,0 +1,7 @@
+config_name: random_forest
+path_to_csv_train: ../data/train.csv
+path_to_csv_test_X: ../data/test.csv
+path_to_csv_test_y: ../data/y_true.csv
+path_to_write_metrics: ../metrics/train_metrics.txt
+path_to_save_model: ../models/log_regression.joblib
+model: RandomForest
