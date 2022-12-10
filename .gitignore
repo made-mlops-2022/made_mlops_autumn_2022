@@ -1,2 +1,6 @@
-src/outputs
-src/__pycache__
+ml_project/run_code/outputs
+ml_project/src/outputs
+ml_project/tests/outputs
+ml_project/src/__pycache__
+ml_project/conf/__pycache__
+ml_project/tests/__pycache__
